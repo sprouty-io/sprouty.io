@@ -1,135 +1,91 @@
-# Turborepo starter
+# 🌱 Sprouty.io
 
-This Turborepo starter is maintained by the Turborepo core team.
+Welcome to **Sprouty.io** — the modular, AI-powered SaaS ecosystem designed to revolutionize hospitality operations with intelligence, personalization, and resilience. This is the monorepo for the entire platform, including frontend apps, backend APIs, automation scripts, infrastructure, and core documentation.
 
-## Using this example
+## 🚀 Mission
+To build a living digital organism that empowers hospitality teams through intelligent automation, personalized service, sustainable practices, and operational excellence.
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
+## 📦 Repository Structure
+```txt
+sprouty-io/
+├── apps/               # Frontend & backend applications (Next.js + Strapi)
+│   ├── office/         # Admin dashboard (Next.js, Materio UI)
+│   └── backend/        # Headless CMS & API layer (Strapi)
+├── packages/           # Shared components, config, and UI
+├── scripts/            # DevOps automation, setup, backups
+├── docs/               # Master project docs (vision, stack, architecture)
+├── database/           # PostgreSQL schema and seed data
+├── tests/              # Unit and integration tests
+├── .github/            # CI/CD workflows
+├── docker-compose.yml # Multi-container orchestration
+└── README.md           # This file
 ```
 
-## What's inside?
+## 🧠 Core Modules (Live DNS-Ready)
+| Subdomain              | Purpose                        |
+|------------------------|--------------------------------|
+| `sprouty.io`           | Marketing Landing Page (Vercel) |
+| `app.sprouty.io`       | The Office - Admin Panel        |
+| `learn.sprouty.io`     | The Stage - LMS & Training      |
+| `sop.sprouty.io`       | The Guide - SOP Generator       |
+| `menu.sprouty.io`      | The Sheet - Menu Management     |
+| `ai.sprouty.io`        | AI Studio - Agents & Logic      |
+| `insights.sprouty.io`  | Analytics & Business Insights   |
+| `community.sprouty.io` | Forums & Support Center         |
 
-This Turborepo includes the following packages/apps:
+## 🧬 Biological Architecture
+Sprouty.io mimics a living system. Highlights:
+- **Neural Core**: Immutable values & mission
+- **Neural Cortex**: Secure service communication
+- **Cognitive System**: AI/ML engine (Claude + GPT)
+- **Metabolic System**: Resource efficiency & scheduling
+- **Immune System**: Self-healing security & monitoring
+- **Reproductive System**: Auto-generation of new features (future)
 
-### Apps and Packages
+## 🛠️ Tech Stack
+- **Frontend**: Next.js, TailwindCSS, Materio UI
+- **Backend**: Strapi (Node.js), REST APIs
+- **Database**: PostgreSQL (Cloud SQL ready)
+- **Infrastructure**: Docker, NGINX, Certbot, Hostinger VPS
+- **AI Layer**: OpenAI, Claude, Pinecone
+- **CI/CD**: GitHub Actions, setup scripts, Vault for secrets
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+## ⚙️ Quickstart (Dev Mode)
+```bash
+# Clone and enter
+git clone git@github.com:sprouty-io/sprouty-io.git && cd sprouty-io
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build
-yarn dlx turbo build
-pnpm exec turbo build
-```
-
-You can build a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo build --filter=docs
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo build --filter=docs
-yarn exec turbo build --filter=docs
-pnpm exec turbo build --filter=docs
+# Run full local dev stack
+./scripts/setup_project.sh
 ```
 
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev
-yarn exec turbo dev
-pnpm exec turbo dev
+## 🧪 Testing
+```bash
+pnpm test    # Run all unit and integration tests
 ```
 
-You can develop a specific package by using a [filter](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters):
+## 🔐 Security & Secrets
+- All secrets stored in **Vault** or `.env` (never hardcoded)
+- ENV templates: `.env.example` files in each app
 
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo dev --filter=web
+## 🌍 DNS & Domains
+Live subdomains already mapped via Cloudflare/Hostinger:
+[See full DNS map](docs/sprouty-io%20DNS%20Records.md)
 
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo dev --filter=web
-yarn exec turbo dev --filter=web
-pnpm exec turbo dev --filter=web
-```
+## 📚 Documentation
+- [📘 Ultimate Guide & Plan](docs/Final%20Version.pdf)
+- [🧠 Project To-Do Map](docs/sprouty-io%20project%20todo.md)
+- [🔐 Secrets Reference (Vault)](docs/sprouty-io%20project%20credentials%20secrets.md)
 
-### Remote Caching
+## 🧭 Contributing
+Coming soon: Contributor guide + issue templates.
+For now, clone the repo, follow the setup scripts, and begin iterating.
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+## 🫱 Founder's Note
+> "This is more than software — it's a living system designed to grow with hospitality. Thank you for helping build the future."
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+— Ruslan Kaptsan, Founder 🌱
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+---
 
-```
-cd my-turborepo
-
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo login
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo login
-yarn exec turbo login
-pnpm exec turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-# With [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation) installed (recommended)
-turbo link
-
-# Without [global `turbo`](https://turborepo.com/docs/getting-started/installation#global-installation), use your package manager
-npx turbo link
-yarn exec turbo link
-pnpm exec turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+> Built with ❤️, engineered for excellence, and designed to evolve.
