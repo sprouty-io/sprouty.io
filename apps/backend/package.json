@@ -18,7 +18,12 @@
     "@strapi/plugin-cloud": "5.16.1",
     "@strapi/plugin-users-permissions": "5.16.1",
     "@strapi/strapi": "5.16.1",
+    "@uiw/react-codemirror": "^4.23.14",
     "better-sqlite3": "11.3.0",
+    "codemirror": "^6.0.0",
+    "esbuild": "0.25.5",
+    "koa": "^2.15.2",
+    "pg": "^8.16.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
@@ -26,9 +31,10 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.15.4",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "typescript": "^5"
+    "typescript": "^5.3.3"
   },
   "engines": {
     "node": ">=18.0.0 <=22.x.x",

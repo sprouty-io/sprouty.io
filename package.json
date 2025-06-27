@@ -9,12 +9,21 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "prettier": "^3.6.0",
+    "prettier": "^3.6.2",
     "turbo": "^2.5.4",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=18"
+  },
+  "overrides": {
+    "boolean": "^4.0.0",
+    "buildmail": "^4.0.0",
+    "glob": "^10.4.5",
+    "inflight": "^1.0.7",
+    "lodash.get": "^4.4.2",
+    "mailcomposer": "^4.0.0",
+    "rimraf": "^5.0.0"
   }
 }
