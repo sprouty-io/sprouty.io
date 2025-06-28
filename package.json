@@ -1,17 +1,39 @@
 {
-<<<<<<< HEAD
-  "name": "sprouty-io",
+  "name": "sprouty-io-frontend",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "check-types": "turbo run check-types",
+    "turbo-build": "turbo run build",
+    "turbo-dev": "turbo run dev",
+    "turbo-lint": "turbo run lint"
+  },
+  "dependencies": {
+    "next": "15.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@emnapi/core": "^1.4.3",
+    "@emnapi/runtime": "^1.4.3",
+    "@emnapi/wasi-threads": "^1.0.2",
+    "@eslint/eslintrc": "^3",
+    "@napi-rs/wasm-runtime": "^0.2.11",
+    "@tailwindcss/postcss": "^4",
+    "@tybys/wasm-util": "^0.9.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.4",
     "prettier": "^3.6.2",
     "turbo": "^2.5.4",
+    "tailwindcss": "^4",
     "typescript": "5.8.3"
   },
   "packageManager": "pnpm@9.0.0",
@@ -26,31 +48,5 @@
     "lodash.get": "^4.4.2",
     "mailcomposer": "^4.0.0",
     "rimraf": "^5.0.0"
-=======
-  "name": "frontend",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.4",
-    "@eslint/eslintrc": "^3"
->>>>>>> 7ac97446 (Initial commit from Create Next App)
   }
 }
